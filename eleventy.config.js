@@ -18,8 +18,8 @@ module.exports = function(eleventyConfig) {
   });
 
   // Collections and pagination.
-  eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => {
+  eleventyConfig.addCollection("blogs", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blogs/*.md").sort((a, b) => {
       return new Date(a.date) - new Date(b.date);
     });
   });

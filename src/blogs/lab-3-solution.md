@@ -2,7 +2,7 @@
 layout: base
 title: Lab 3 Solution
 date: 2024-12-04
-permalink: "/posts/lab-3-solution/"
+permalink: "/blogs/lab-3-solution/"
 ---
 
 # {{ lab3Solution.data.title }}

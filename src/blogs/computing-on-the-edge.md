@@ -2,7 +2,7 @@
 layout: base
 title: Computing on the Edge
 date: 2024-11-15
-permalink: "/posts/computing-on-the-edge/"
+permalink: "/blogs/computing-on-the-edge/"
 ---
 
 # {{ computingOnTheEdge.data.title }}

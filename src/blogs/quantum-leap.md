@@ -2,7 +2,7 @@
 layout: base
 title: Quantum Leap
 date: 2024-11-13
-permalink: "/posts/quantum-leap/"
+permalink: "/blogs/quantum-leap/"
 ---
 
 # {{ quantumLeap.data.title }}
