@@ -11,8 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@sendgrid/mail": "^7.6.0",
     "axios": "^1.7.7",
-    "strapi": "^3.6.11",
-    "@sendgrid/mail": "^7.6.0"
+    "strapi": "^3.6.11"
   }
 }
