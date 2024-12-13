@@ -2,6 +2,34 @@
 
 ---
 
+## Description and Instructions of Eleventy Website Execution
+
+### Description
+
+This website was created with Eleventy (11ty), a simple and flexible static site generator that converts templates and data files into static HTML pages. Eleventy supports HTML, Markdown, and other templating languages, giving it an adaptable option for developers.
+
+### Instructions
+
+1. Open a new terminal in Visual Studio Code.
+
+2. Ensure the directory is eleventy.
+
+3. To install Eleventy and store it in my project's package.json, run the command.
+
+- npm install @11ty/eleventy
+
+4. Run the Eleventy command to process Markdown files and output them to the dist folder.
+
+- npx @11ty/eleventy
+
+5. To begin a hot-reloading local web server, run the command --serve.
+
+- npx @11ty/eleventy --serve
+
+6. Open <http://localhost:8080/> in a Google Chrome web browser to see my Eleventy site live.
+
+---
+
 ## Description and Instructions of Strapi Project Execution
 
 ### Description
@@ -32,34 +60,6 @@ This project was created with Strapi, a robust headless CMS that allows me to ma
 
 - Email: takik123@gmail.com
 - Password: Takio123nbt,,,
-
----
-
-## Description and Instructions of Eleventy Website Execution
-
-### Description
-
-This website was created with Eleventy (11ty), a simple and flexible static site generator that converts templates and data files into static HTML pages. Eleventy supports HTML, Markdown, and other templating languages, giving it an adaptable option for developers.
-
-### Instructions
-
-1. Open a new terminal in Visual Studio Code.
-
-2. Ensure the directory is eleventy.
-
-3. To install Eleventy and store it in my project's package.json, run the command.
-
-- npm install @11ty/eleventy
-
-4. Run the Eleventy command to process Markdown files and output them to the dist folder.
-
-- npx @11ty/eleventy
-
-5. To begin a hot-reloading local web server, run the command --serve.
-
-- npx @11ty/eleventy --serve
-
-6. Open <http://localhost:8080/> in a Google Chrome web browser to see my Eleventy site live.
 
 ---
 
