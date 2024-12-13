@@ -1,0 +1,23 @@
+body {
+  background-color: yellow;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: red !important;
+  color: black !important;
+}
+
+.footer {
+  background-color: red !important;
+  color: black !important;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: darken(black, 20%);
+}

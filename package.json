@@ -1,0 +1,17 @@
+{
+  "name": "eleventy",
+  "version": "1.0.0",
+  "description": "Design an 11ty project that demonstrates modern web programming techniques.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/css/styles.scss dist/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "Takirul 100862036",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "axios": "^1.7.7",
+    "strapi": "^3.6.11"
+  }
+}

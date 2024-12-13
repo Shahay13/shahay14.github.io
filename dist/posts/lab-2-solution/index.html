@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 2 Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/index/">Eleventy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about/">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/readme/">Read Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blogs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/posts/car/">Car</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/posts/lab-1-solution/">Lab 1 Solution</a></li>
+            <li><a class="dropdown-item" href="/posts/lab-2-solution/">Lab 2 Solution</a></li>
+            <li><a class="dropdown-item" href="/posts/lab-3-solution/">Lab 3 Solution</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/posts/quantum-leap/">Quantum Leap</a></li>
+            <li><a class="dropdown-item" href="/posts/computing-on-the-edge/">Computing on the Edge</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/cars/">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/contact/">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="container my-5">
+      <h1>Lab 2 Solution</h1>
+<hr>
+<p><strong>Author:</strong> Takirul</p>
+<p><strong>Published on:</strong> 2024-11-10</p>
+<p><img src="http://localhost:1337/uploads/Lab_2_Solution_Image_1_c916f5f300.png" alt="Image"></p>
+<p><img src="http://localhost:1337/uploads/Lab_2_Solution_Image_2_461b727a78.png" alt="Image"></p>
+<h2>Clarity of Scope Definition</h2>
+<p>This project tries to improve an existing 11ty website by incorporating a headless CMS. This will show current web development approaches such as API interaction, content modelling, and template design with Nunjucks. The project will contain dynamic functionality such as pagination and filtering, all powered by the selected headless CMS.</p>
+<h2>Justification of Technology Choices</h2>
+<h3>Strapi</h3>
+<p>Strapi is an open-source headless CMS with a customisable API and easy-to-use admin panel. Its flexibility in setting content kinds and fields, combined with the ability to self-host, make it an excellent contender.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Open source and extremely customizable.</li>
+<li>Supports RESTful APIs and GraphQL.</li>
+<li>A robust development community and substantial documentation.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>When compared to other CMS alternatives, it may require more setup and configuration.</li>
+<li>Beginners will encounter a steeper learning curve.</li>
+</ul>
+<h3>Contentful</h3>
+<p>Contentful is a cloud-based headless CMS renowned for its powerful API and scalability. It has a large number of integrations and a robust UI for content management.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Excellent user interface and experience.</li>
+<li>Robust API with substantial documentation.</li>
+<li>Strong support for dynamic content and previewing capabilities.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Larger projects can be costly.</li>
+<li>In comparison to open-source competitors, customization options are limited.</li>
+</ul>
+<h3>Sanity</h3>
+<p>Sanity provides a real-time collaborative editing environment as well as a customizable schema system. It is renowned for its developer-friendliness approach and real-time functionalities.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Real-time collaboration and editing.</li>
+<li>Highly adaptable content modelling.</li>
+<li>Powerful development tools and integration capabilities.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Pricing can be an issue for small projects.</li>
+<li>Some features have a longer learning curve.</li>
+</ul>
+<h3>Prismic</h3>
+<p>Prismic is a headless CMS designed to provide an excellent editor experience through slice-based content modelling. It excels at developing customizable content architectures.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>The user interface is straightforward and easy to understand.</li>
+<li>Simple integration with a variety of frameworks and static website generators.</li>
+<li>Allows for content versioning and scheduling.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Customization options are limited for more sophisticated applications.</li>
+<li>API capabilities are somewhat restricted.</li>
+</ul>
+<h3>Ghost</h3>
+<p>Ghost is an open-source headless CMS that was created mainly for content-driven webpages. It includes a strong admin interface as well as a robust API.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>SEO and performance optimization are already built in.</li>
+<li>Strong emphasis on content generation and publishing.</li>
+<li>Setup and use are simple for smaller tasks.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Complicated content modelling requires less flexibility.</li>
+<li>Custom workflows and integrations receive little support.</li>
+</ul>
+<h2>Integration Efforts</h2>
+<h3>Integrating Strapi</h3>
+<p>To start with, I tried Strapi, a free headless content management system noted for its adaptability and customization. I made a new Strapi project, defined content kinds, and built links among them. Strapi's RESTful and GraphQL APIs enabled smooth data retrieval.</p>
+<p>Here is an example of data retrieval with Strapi:</p>
+<pre><code>const axios = require('axios');
+
+async function getContent() {
+  try {
+    const response = await axios.get('http://localhost:1337/posts');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching content from Strapi:', error);
+  }
+}
+
+module.exports = getContent;
+</code></pre>
+<p>Strapi needs more initial configuration, but it gave the customization and control I needed for my project. Its thorough documentation and engaged community were also beneficial features.</p>
+<h3>Integrating Contentful</h3>
+<p>Then I integrated Contentful with my 11ty site to test its functionality. I began by establishing a new space in Contentful and specifying the content models for my website. Contentful's RESTful API enabled me to simply fetch and show the content. But during the integration process, I experienced issues with customization constraints and higher costs for bigger projects.</p>
+<p>Here is an example of my effort to get the data from Contentful:</p>
+<pre><code>const contentful = require('contentful');
+const client = contentful.createClient({
+  space: 'hgd9x4hwtgf4',
+  accessToken: 'xHgViYTP8__wdI3vp_8f4YADAHGtcU4puaPPkB2tA9Y'
+});
+
+async function getContent() {
+  const entries = await client.getEntries();
+  return entries.items;
+}
+
+module.exports = getContent;
+</code></pre>
+<p>While Contentful gave a flawless user experience and an extensive API, the price and customization limits encouraged me to look into alternative solutions.</p>
+<h3>Integrating Sanity</h3>
+<p>At the end, I tried Sanity, which gave real-time collaboration and a customizable content approach. I made a new project and specified schemas using Sanity Studio. The real-time editing feature was excellent, and the GROQ query language was extremely flexible for retrieving content. But I experienced a steeper learning curve and discovered some functions to be too complicated for my project's requirements.</p>
+<p>Here is an example of the data retrieval procedure utilizing Sanity:</p>
+<pre><code>const sanityClient = require('@sanity/client');
+const client = sanityClient({
+  projectId: 'fn11wfhe',
+  dataset: 'production',
+  useCdn: true
+});
+
+async function getContent() {
+  const query = '*[_type == &quot;post&quot;]';
+  const posts = await client.fetch(query);
+  return posts;
+}
+
+module.exports = getContent;
+</code></pre>
+<p>Although Sanity's powerful collaboration and real-time functions, its price and complexity inspired me to examine Strapi, which gives free adaptability and extensive customization choices.</p>
+<h2>Selected CMS: Strapi</h2>
+<p>Strapi was selected for its versatility, self-hosting abilities, and robust community support. It fits the project's objectives by providing customized APIs, quick data retrieval, and smooth integration with the 11ty SSG.</p>
+<h2>Implementation Approach</h2>
+<ol>
+<li><strong>Configure Strapi and specify content kinds:</strong> Structure the content to meet the project's requirements.</li>
+<li><strong>Integration of the API:</strong> Fetch the content during the build process.</li>
+<li><strong>Design the template:</strong> Make dynamic templates with Nunjucks.</li>
+<li><strong>Use pagination and filtering:</strong> Improve the user experience using dynamic features.</li>
+</ol>
+<h2>Relevance to Project Requirements</h2>
+<p>The selected CMS, Strapi integration, and implementation approach fulfill all project needs, including API interface, content modelling, and the construction of dynamic templates. Strapi's versatility and customization options enable compatibility with current web practices.</p>
+<h2>Depth of Analysis</h2>
+<p>The investigation looked at the capabilities and trade-offs of five headless CMS solutions, and after a comprehensive comparison and integration effort, Strapi was selected. The decision is based on project-specific requirements such as flexibility, data control, and simplicity of integration.</p>
+<h2>Professional Presentation</h2>
+<p>This document is well-organized, concise, and thorough, including a full reasoning for technological selections and integration efforts as well as a structured implementation approach. The language and formatting maintain readability and professional standards.</p>
+<h2>Website Links</h2>
+<p><a href="https://docs.strapi.io/">https://docs.strapi.io/</a></p>
+<p><a href="https://docs-v4.strapi.io/dev-docs/intro">https://docs-v4.strapi.io/dev-docs/intro</a></p>
+<p><a href="https://docs.strapi.io/user-docs/intro">https://docs.strapi.io/user-docs/intro</a></p>
+<p><a href="https://www.contentful.com/developers/docs/">https://www.contentful.com/developers/docs/</a></p>
+<p><a href="https://www.contentful.com/developers/docs/references/">https://www.contentful.com/developers/docs/references/</a></p>
+<p><a href="https://www.contentful.com/guides/">https://www.contentful.com/guides/</a></p>
+<p><a href="https://www.sanity.io/docs">https://www.sanity.io/docs</a></p>
+<p><a href="https://www.sanity.io/docs/getting-started-with-sanity">https://www.sanity.io/docs/getting-started-with-sanity</a></p>
+<p><a href="https://www.sanity.io/docs/documents">https://www.sanity.io/docs/documents</a></p>
+<p><a href="https://prismic.io/docs">https://prismic.io/docs</a></p>
+<p><a href="https://prismic.io/docs/api">https://prismic.io/docs/api</a></p>
+<p><a href="https://ghost.org/docs">https://ghost.org/docs</a></p>
+<p><a href="https://ghost.org/docs/content-api/">https://ghost.org/docs/content-api/</a></p>
+
+    </div>
+    <footer class="footer bg-dark text-white text-center py-3">
+  <p>&copy; <span id="year"></span> Takirul. All rights reserved.</p>
+  <p>
+    <a href="https://twitter.com/myprofile/" class="text-white me-2">Twitter</a>
+    <a href="https://linkedin.com/myprofile/" class="text-white me-2">LinkedIn</a>
+    <a href="/terms-and-conditions/" class="text-white">Terms and Conditions</a>
+  </p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

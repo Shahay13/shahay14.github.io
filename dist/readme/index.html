@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Read Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/index/">Eleventy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about/">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/readme/">Read Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blogs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/posts/car/">Car</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/posts/lab-1-solution/">Lab 1 Solution</a></li>
+            <li><a class="dropdown-item" href="/posts/lab-2-solution/">Lab 2 Solution</a></li>
+            <li><a class="dropdown-item" href="/posts/lab-3-solution/">Lab 3 Solution</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/posts/quantum-leap/">Quantum Leap</a></li>
+            <li><a class="dropdown-item" href="/posts/computing-on-the-edge/">Computing on the Edge</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/cars/">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/contact/">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="container my-5">
+      <h1>Read Me</h1>
+<hr>
+<h2>Description and Instructions of Strapi Project Execution</h2>
+<h3>Description</h3>
+<p>This project was created with Strapi, a robust headless CMS that allows me to manage and publish content using RESTful or GraphQL APIs. Strapi is very adaptable and compatible with many modern web development standards, making it a great choice for flexible content management.</p>
+<h3>Instructions</h3>
+<ol>
+<li>
+<p>Open Visual Studio Code, open the folder, and select the folder, eleventy.</p>
+</li>
+<li>
+<p>In Visual Studio Code, launch a new terminal.</p>
+</li>
+<li>
+<p>Use the cd command to change the directory to strapi-project.</p>
+</li>
+</ol>
+<ul>
+<li>cd strapi-project</li>
+</ul>
+<ol start="4">
+<li>Run the specified command to install every important component.</li>
+</ol>
+<ul>
+<li>npm install</li>
+</ul>
+<ol start="5">
+<li>To begin the Strapi development server, use the following command.</li>
+</ol>
+<ul>
+<li>npm run develop</li>
+</ul>
+<ol start="6">
+<li>
+<p>Open a web browser and go to <a href="http://localhost:1337/">http://localhost:1337/</a> to enter my Strapi site live.</p>
+</li>
+<li>
+<p>To enter the Strapi admin panel to manage the content, please log in with my credentials.</p>
+</li>
+</ol>
+<ul>
+<li>Email: takik123@gmail.com</li>
+<li>Password: Takio123nbt,,,</li>
+</ul>
+<hr>
+<h2>Description and Instructions of Eleventy Website Execution</h2>
+<h3>Description</h3>
+<p>This website was created with Eleventy (11ty), a simple and flexible static site generator that converts templates and data files into static HTML pages. Eleventy supports HTML, Markdown, and other templating languages, giving it an adaptable option for developers.</p>
+<h3>Instructions</h3>
+<ol>
+<li>
+<p>Open a new terminal in Visual Studio Code.</p>
+</li>
+<li>
+<p>Ensure the directory is eleventy.</p>
+</li>
+<li>
+<p>To install Eleventy and store it in my project's package.json, run the command.</p>
+</li>
+</ol>
+<ul>
+<li>npm install @11ty/eleventy</li>
+</ul>
+<ol start="4">
+<li>Run the Eleventy command to process Markdown files and output them to the dist folder.</li>
+</ol>
+<ul>
+<li>npx @11ty/eleventy</li>
+</ul>
+<ol start="5">
+<li>To begin a hot-reloading local web server, run the command --serve.</li>
+</ol>
+<ul>
+<li>npx @11ty/eleventy --serve</li>
+</ul>
+<ol start="6">
+<li>Open <a href="http://localhost:8080/">http://localhost:8080/</a> in a Google Chrome web browser to see my Eleventy site live.</li>
+</ol>
+<hr>
+<h2>Description and Instructions of Netlify Functions Execution</h2>
+<h3>Description</h3>
+<p>This project integrates a serverless function using Netlify Functions to handle backend logic and a contact form that submits user input to the serverless function. The serverless function uses the SendGrid API to send emails with the form data.</p>
+<h3>Instructions</h3>
+<ol>
+<li>Open a New Terminal in Visual Studio Code:</li>
+</ol>
+<ul>
+<li>Use the terminal to navigate to my project directory.</li>
+<li>cd eleventy</li>
+</ul>
+<ol start="2">
+<li>Set Up Environment Variables:</li>
+</ol>
+<ul>
+<li>Create a <code>.env</code> file in my project root and add my SendGrid API key (ensure this file is ignored by Git).</li>
+<li>SENDGRID_API_KEY=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</li>
+</ul>
+<ol start="3">
+<li>Install Required Packages:</li>
+</ol>
+<ul>
+<li>Run the following command to install the dependencies (SendGrid and dotenv):</li>
+<li>npm install</li>
+</ul>
+<ol start="4">
+<li>Run the Project Locally:</li>
+</ol>
+<ul>
+<li>Use Netlify's CLI to run my project locally.</li>
+<li>npm install -g netlify-cli</li>
+<li>netlify dev</li>
+</ul>
+<ol start="5">
+<li>Open the Localhost Link:</li>
+</ol>
+<ul>
+<li>Open <a href="http://localhost:8081/">http://localhost:8081/</a> in a Google Chrome web browser to see my project site live.</li>
+</ul>
+<hr>
+<h2>Documentation of Content Filtering for Custom Schema</h2>
+<h3>Overview</h3>
+<p>In Assignment 2, I sought to develop content filtering for a custom schema using the Eleventy static site generator. This included creating a custom schema in Strapi, retrieving the data, and incorporating filtering capability into Eleventy.</p>
+<h3>Implementation Attempts</h3>
+<h4>Step 1: Configure the CMS Schema</h4>
+<p>I set up the custom schema in Strapi to match the structure of the existing .json data file. The schema had the following fields:</p>
+<ul>
+<li>id</li>
+<li>name</li>
+<li>make</li>
+<li>doors</li>
+<li>wheels</li>
+<li>sound</li>
+<li>image</li>
+</ul>
+<h4>Step 2: Retrieve Data from Strapi</h4>
+<p>I set Eleventy to retrieve data from Strapi. This is how I set it up.
+In eleventy.config.js, I provided the appropriate configuration to fetch data from Strapi:</p>
+<pre><code>eleventyConfig.addGlobalData(&quot;carPost&quot;, async () =&gt; {
+  try {
+    const response = await axios.get('http://localhost:1337/api/posts');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching content from Strapi:', error);
+    return [];
+  }
+});
+</code></pre>
+<h4>Step 3: Implement Filtering</h4>
+<p>I tried to filter the content using Eleventy collections. The idea was to filter cars depending on their number of doors. Here is the collection setup:
+In the eleventy.config.js file, I tried building collections to filter automobiles:</p>
+<pre><code>eleventyConfig.addCollection(&quot;twoDoorCars&quot;, function(collectionApi) {
+  return collectionApi.getFilteredByGlob(&quot;src/data/car.json&quot;).filter(car =&gt; car.doors === 2);
+});
+
+eleventyConfig.addCollection(&quot;fourDoorCars&quot;, function(collectionApi) {
+  return collectionApi.getFilteredByGlob(&quot;src/data/car.json&quot;).filter(car =&gt; car.doors === 4);
+});
+</code></pre>
+<h3>Issues and challenges</h3>
+<ol>
+<li>Data Structure Mismatches:</li>
+</ol>
+<ul>
+<li>Eleventy’s expected data structures did not match the actual data retrieved from Strapi. This resulted in issues while trying to render filtered material.</li>
+</ul>
+<ol start="2">
+<li>Difficulties with Dynamic Fetching:</li>
+</ol>
+<ul>
+<li>Obtaining dynamic data during construction was challenging. The data was not always available during the construction, resulting in incomplete or failed builds.</li>
+</ul>
+<ol start="3">
+<li>Pagination Integration:</li>
+</ol>
+<ul>
+<li>Combining pagination and filtered content adds complexity. It was difficult and error-prone to ensure that pagination functioned properly with filtered collections.</li>
+</ul>
+<ol start="4">
+<li>Image Hosting and Display:</li>
+</ol>
+<ul>
+<li>Configuring templates for proper image hosting and display requires additional steps. Image paths or URLs did not always match the data retrieved.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>Despite several hurdles, major efforts were made to align the bespoke schema with modern online principles and Eleventy setups. The documentation contains the processes followed, code samples, and challenges encountered. Future work can expand on this base to create fully functioning content filtering.</p>
+
+    </div>
+    <footer class="footer bg-dark text-white text-center py-3">
+  <p>&copy; <span id="year"></span> Takirul. All rights reserved.</p>
+  <p>
+    <a href="https://twitter.com/myprofile/" class="text-white me-2">Twitter</a>
+    <a href="https://linkedin.com/myprofile/" class="text-white me-2">LinkedIn</a>
+    <a href="/terms-and-conditions/" class="text-white">Terms and Conditions</a>
+  </p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

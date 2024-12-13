@@ -1,0 +1,28 @@
+$primary-color: #007bff;
+$header-footer-color: red;
+$background-color: yellow;
+$text-color: black;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.navbar {
+  background-color: $header-footer-color !important;
+  color: $text-color !important;
+}
+
+.footer {
+  background-color: $header-footer-color !important;
+  color: $text-color !important;
+}
+
+a {
+  color: $text-color;
+}
+
+a:hover {
+  color: darken($text-color, 20%) !important;
+}

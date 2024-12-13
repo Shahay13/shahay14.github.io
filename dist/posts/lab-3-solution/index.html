@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 3 Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/index/">Eleventy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about/">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/readme/">Read Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blogs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/posts/car/">Car</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/posts/lab-1-solution/">Lab 1 Solution</a></li>
+            <li><a class="dropdown-item" href="/posts/lab-2-solution/">Lab 2 Solution</a></li>
+            <li><a class="dropdown-item" href="/posts/lab-3-solution/">Lab 3 Solution</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/posts/quantum-leap/">Quantum Leap</a></li>
+            <li><a class="dropdown-item" href="/posts/computing-on-the-edge/">Computing on the Edge</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/cars/">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/contact/">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="container my-5">
+      <h1>Lab 3 Solution</h1>
+<hr>
+<p><strong>Author:</strong> Takirul</p>
+<p><strong>Published on:</strong> 2024-12-03</p>
+<p><img src="http://localhost:1337/uploads/Lab_3_Solution_Image_1_0bbc56eefc.png" alt="Image"></p>
+<p><img src="http://localhost:1337/uploads/Lab_3_Solution_Image_2_ad68cb99c8.png" alt="Image"></p>
+<h2>Clarity of Scope Definition</h2>
+<p>This project seeks to improve an existing 11ty website by incorporating serverless functionalities and a headless CMS to demonstrate modern web development principles. A dynamic contact form will also be created to handle email submissions using a serverless function.</p>
+<h2>Justification of Technology Choices</h2>
+<h3>Serverless Function Providers</h3>
+<h4>Netlify Functions</h4>
+<p>Netlify provides a smooth approach to deploying serverless functionalities alongside my static website. It supports JavaScript (Node.js) and Go and includes built-in capabilities for continuous deployment.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Easy integration with static websites.</li>
+<li>Continuous deployment capability is built in.</li>
+<li>The free tier is accessible.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Runtime options are limited (just Node.js and Go).</li>
+<li>There is a possibility for vendor lock-in.</li>
+</ul>
+<h4>AWS Lambda</h4>
+<p>AWS Lambda supports a variety of languages (Node.js, Python, Ruby, Java, Go, and .NET Core) and connects with other AWS services.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Supports a wide range of languages.</li>
+<li>Comprehensive integration with other AWS services.</li>
+<li>Scalable and reliable.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Can be difficult to set up and administer.</li>
+<li>Required experience with the AWS ecosystem.</li>
+<li>Costs can become considerable when scaled.</li>
+</ul>
+<h4>Google Cloud Functions</h4>
+<p>Google Cloud Functions supports Python, Node.js, and Go. It connects well with other Google Cloud services and has robust event-driven features.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Excellent integration with Google Cloud services.</li>
+<li>Built-in security and scalability.</li>
+<li>Pay-per-use pricing.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Limited language support.</li>
+<li>Beginners will find the setup complex.</li>
+<li>The cost of extensive use can be substantial.</li>
+</ul>
+<h4>Azure Functions</h4>
+<p>Azure Functions support a variety of languages (JavaScript, C#, F#, Java, Python, and PowerShell) and integrate seamlessly with Microsoft Azure services.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Supports a wide range of languages.</li>
+<li>Excellent integration with Azure services.</li>
+<li>Pricing options are flexible.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>The Azure ecosystem might be challenging to manage.</li>
+<li>New users face a learning curve.</li>
+<li>Scale can result in significant expenses.</li>
+</ul>
+<h3>Email Services</h3>
+<h4>SendGrid</h4>
+<p>SendGrid is a cloud-based service that offers consistent email delivery, scalability, and real-time statistics. It has a rich API and can handle both transactional and marketing emails.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Robust API with substantial documentation.</li>
+<li>High delivery rates.</li>
+<li>Scalable and reliable.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Premium features carry a higher cost.</li>
+<li>Some users experience deliverability concerns with the free tier.</li>
+</ul>
+<h4>Mailgun</h4>
+<p>Mailgun offers sophisticated APIs for sending, receiving, and tracking emails. It focuses on developers and provides excellent deliverability and scalability.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Developer-friendly API.</li>
+<li>High delivery rates.</li>
+<li>Scalable infrastructure.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Higher volumes can be more expensive.</li>
+<li>The free tier offers a limited set of features.</li>
+</ul>
+<h4>Mailchimp</h4>
+<p>Mailchimp is mostly recognized for its marketing email services, but it also provides transactional email via Mandrill (a Mailchimp add-on). It offers an easy-to-use interface and sophisticated marketing features.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>User-friendly interface.</li>
+<li>Robust marketing tools and analytics.</li>
+<li>It integrates with Mandrill for transactional emails.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Premium features come at a higher cost.</li>
+<li>Marketing-oriented emails were prioritized over transactional emails.</li>
+</ul>
+<h2>Selected Providers</h2>
+<h3>Serverless Function Provider: Netlify Functions</h3>
+<p>Netlify Functions was chosen due to its smooth connection with static sites, simple setup, and built-in continuous deployment. The free tier is sufficient for this project's requirements, as it provides the necessary functionality with little overhead.</p>
+<h3>Email Service: SendGrid</h3>
+<p>SendGrid was chosen because of its rich API, excellent delivery rates, and dependable service. The free tier offers sufficient resources for preliminary testing and development, making it an ideal choice for this project.</p>
+<h2>Implementation Approach</h2>
+<ol>
+<li><strong>Set up Netlify Functions:</strong> Set up the site to deploy serverless functions using Netlify.</li>
+<li><strong>Develop the serverless function:</strong> Create a serverless function that handles form submissions and sends emails using SendGrid.</li>
+<li><strong>Integrate the contact form:</strong> Create a dynamic contact form in JavaScript and use the fetch API to send data to the serverless function.</li>
+<li><strong>Deploy and test:</strong> Use Netlify to deploy the site and functionalities, and then test form submission and email functionality.</li>
+</ol>
+<h3>Example Code: Netlify Function</h3>
+<pre><code>const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+exports.handler = async (event, context) =&gt; {
+  const data = JSON.parse(event.body);
+
+  const msg = {
+    to: 'my.email+alias@domain.com',
+    cc: 'adam.kunz+inft@durhamcollege.ca',
+    from: 'my.email@domain.com',
+    subject: `AUTO: ${data.subject}`,
+    text: `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nMessage: ${data.message}`,
+  };
+
+  try {
+    await sgMail.send(msg);
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: 'Email sent successfully!' }),
+    };
+  } catch (error) {
+    return {
+      statusCode: error.code,
+      body: JSON.stringify({ error: error.message }),
+    };
+  }
+};
+</code></pre>
+<h2>Relevance to Project Requirements</h2>
+<p>This approach meets the project's needs by including serverless methods for dynamic content processing and email capabilities. The chosen technologies, Netlify Functions and SendGrid, offer solid solutions that effectively fulfill the project's requirements.</p>
+<h2>Depth of Analysis</h2>
+<p>The investigation looked at several serverless function providers and email services, weighing their benefits and drawbacks. The final decision between Netlify Functions and SendGrid is based on ease of use, dependability, and alignment with project objectives.</p>
+<h2>Professional Presentation</h2>
+<p>This document is well-organized, concise, and comprehensive, outlining the scope, justifications for technology choices, and execution strategy. The language and formatting promote readability and professionalism.</p>
+<h2>Website Links</h2>
+<p><a href="https://docs.netlify.com/cli/manage-functions/">https://docs.netlify.com/cli/manage-functions/</a></p>
+<p><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">https://docs.aws.amazon.com/lambda/latest/dg/welcome.html</a></p>
+<p><a href="https://cloud.google.com/functions/docs">https://cloud.google.com/functions/docs</a></p>
+<p><a href="https://learn.microsoft.com/en-us/azure/azure-functions/">https://learn.microsoft.com/en-us/azure/azure-functions/</a></p>
+<p><a href="https://www.twilio.com/docs/sendgrid">https://www.twilio.com/docs/sendgrid</a></p>
+<p><a href="https://documentation.mailgun.com/">https://documentation.mailgun.com/</a></p>
+<p><a href="https://mailchimp.com/developer/">https://mailchimp.com/developer/</a></p>
+
+    </div>
+    <footer class="footer bg-dark text-white text-center py-3">
+  <p>&copy; <span id="year"></span> Takirul. All rights reserved.</p>
+  <p>
+    <a href="https://twitter.com/myprofile/" class="text-white me-2">Twitter</a>
+    <a href="https://linkedin.com/myprofile/" class="text-white me-2">LinkedIn</a>
+    <a href="/terms-and-conditions/" class="text-white">Terms and Conditions</a>
+  </p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "lab_3_solutions",
+  "info": {
+    "singularName": "lab-3-solution",
+    "pluralName": "lab-3-solutions",
+    "displayName": "Lab 3 Solution"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "author": {
+      "type": "string",
+      "required": false
+    },
+    "publishedDate": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 1 Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/index/">Eleventy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about/">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/readme/">Read Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blogs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/posts/car/">Car</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/posts/lab-1-solution/">Lab 1 Solution</a></li>
+            <li><a class="dropdown-item" href="/posts/lab-2-solution/">Lab 2 Solution</a></li>
+            <li><a class="dropdown-item" href="/posts/lab-3-solution/">Lab 3 Solution</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/posts/quantum-leap/">Quantum Leap</a></li>
+            <li><a class="dropdown-item" href="/posts/computing-on-the-edge/">Computing on the Edge</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/cars/">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/contact/">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="container my-5">
+      <h1>Lab 1 Solution</h1>
+<hr>
+<p><strong>Author:</strong> Takirul</p>
+<p><strong>Published on:</strong> 2024-11-09</p>
+<p><img src="http://localhost:1337/uploads/Lab_1_Solution_Image_1_d909b83407.png" alt="Image"></p>
+<p><img src="http://localhost:1337/uploads/Lab_1_Solution_Image_2_8f639a3e6b.png" alt="Image"></p>
+<h3>Clarity of Scope Definition</h3>
+<p>The objective of this project is to make a modern web development project with 11ty that shows best techniques like building processes, organizing content, and templating. The project will have:</p>
+<ul>
+<li>Structure using eleventy.config.js</li>
+<li>Employ of a templating engine</li>
+<li>Groups and paging</li>
+<li>Front Material with Metadata</li>
+<li>Reusable design folders</li>
+<li>Constant resource management</li>
+<li>Develop procedure</li>
+<li>Markdown contents</li>
+</ul>
+<h3>Justification of Technology Choices</h3>
+<p>3 Template Engines:</p>
+<ol>
+<li>Liquid</li>
+<li>Markdown</li>
+<li>Nunjucks</li>
+</ol>
+<p>Liquid is an easy, secure template language that was originally designed for Shopify. Its security and ease of use make it a popular option for static site generators.</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Easy to understand and utilize.</li>
+<li>Made to be secure and safe.</li>
+<li>Compatible with static website generators such as 11ty and Jekyll.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>In comparison to Nunjucks, it is less adaptable to complicated logic.</li>
+</ul>
+<p>Markdown is a lightweight markup language and has an easy syntax for organizing text. It is used to format text and turn it into HTML that is solid in structure. It was made to be easy to read and write by Aaron Swartz and John Gruber in 2004.</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>The syntax is basic, making it easy to learn and use.</li>
+<li>Many platforms and tools are widely supported and compatible with one another.</li>
+<li>Improves the readability of raw text files.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>There are few choices for complicated formatting.</li>
+<li>Extra processing is needed to convert to HTML for web use.</li>
+</ul>
+<p>Nunjucks is a powerful JavaScript template engine based on Jinja 2. It is very adaptable and can handle complicated logic, making it best for dynamic content rendering.</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Enables complicated filtering and reasoning.</li>
+<li>Template rendering is efficient.</li>
+<li>Established with a huge user base.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Slightly steeper than simpler engines.</li>
+</ul>
+<h3>Selected Template Engine: Markdown</h3>
+<p>Markdown was selected for this project because it is easy and clear. Its simple syntax enables quick and easy content development, and it works nicely with static site generators like 11ty. This makes it an ideal fit for a project designed for showing best practices in modern web development.</p>
+<h3>Static Site Generation (SSG)</h3>
+<p>Static site generators (SSGs) are programs that convert templates and content into static HTML files. This strategy improves performance, increases security, and makes deployment easier.</p>
+<h3>Some SSG Applications</h3>
+<ol>
+<li>Jekyll:
+<ul>
+<li>Pros: Established environment, many plugins, and GitHub Pages interaction.</li>
+<li>Cons: Longer build times and Ruby reliance.</li>
+</ul>
+</li>
+<li>Hugo:
+<ul>
+<li>Pros: Very quick builds, written in Go, and flexible content management.</li>
+<li>Cons: Has a greater learning curve and fewer plugins than Jekyll.</li>
+</ul>
+</li>
+<li>Gatsby:
+<ul>
+<li>Pros: React-based, with a robust plugin ecosystem, ideal for dynamic content.</li>
+<li>Cons: Large sites require a more complicated infrastructure and take longer to create.</li>
+</ul>
+</li>
+<li>Next.js:
+<ul>
+<li>Pros: Hybrid SSG and SSR capabilities, react-based, strong features.</li>
+<li>Cons: May be overkill for simple static pages, and the configuration is more involved.</li>
+</ul>
+</li>
+<li>Hexo:
+<ul>
+<li>Pros: Quick builds, easy setup, and a diverse plugin ecosystem.</li>
+<li>Cons: Less flexible than others and requires JavaScript.</li>
+</ul>
+</li>
+</ol>
+<h3>Configuration in 11ty</h3>
+<p>The build process can be customized through the configuration file (.eleventy.js). The key settings are as follows:</p>
+<ul>
+<li>Choose which file types to process (for example, .njk or .md).</li>
+<li>Select files to copy straight to the output (for example, pictures or CSS).</li>
+<li>Group information together for better management and pagination.</li>
+</ul>
+<h3>Settings in Use:</h3>
+<ul>
+<li>Checks for compliance with the templating engine of choice.</li>
+<li>Makes it easier to manage static assets.</li>
+<li>Organizes material and allows for features like blog posts and pagination.</li>
+</ul>
+<h3>Settings to Explore:</h3>
+<ul>
+<li>Allows global data to be shared across several templates.</li>
+<li>Use reusable functions to enhance templating possibilities.</li>
+<li>Makes complicated HTML snippets in content files easier to understand.</li>
+</ul>
+<h3>Front Matter</h3>
+<p>Front matter is metadata that comes at the beginning of content files and is usually written in YAML or JSON. It shows information such as the title, date, tags, and layout. In the web environment, front matter helps SSGs in dynamically organizing and rendering material.</p>
+<h3>Website Links</h3>
+<p><a href="https://www.developerdrive.com/best-javascript-templating-engines/">https://www.developerdrive.com/best-javascript-templating-engines/</a></p>
+<p><a href="https://colorlib.com/wp/top-templating-engines-for-javascript/">https://colorlib.com/wp/top-templating-engines-for-javascript/</a></p>
+<p><a href="https://www.youtube.com/watch?v=rZyNBd1WgVM">https://www.youtube.com/watch?v=rZyNBd1WgVM</a></p>
+<p><a href="https://gomakethings.com/the-different-static-site-generators-and-which-one-to-choose/">https://gomakethings.com/the-different-static-site-generators-and-which-one-to-choose/</a></p>
+<p><a href="https://www.11ty.dev/">https://www.11ty.dev/</a></p>
+<p><a href="https://tomhazledine.com/eleventy-static-site-generator/">https://tomhazledine.com/eleventy-static-site-generator/</a></p>
+<p><a href="https://docs.netlify.com/frameworks/eleventy/">https://docs.netlify.com/frameworks/eleventy/</a></p>
+<p><a href="https://v0-7-1.11ty.dev/docs/config/">https://v0-7-1.11ty.dev/docs/config/</a></p>
+<p><a href="https://www.11ty.dev/docs/usage/">https://www.11ty.dev/docs/usage/</a></p>
+<p><a href="https://www.11ty.dev/docs/config/">https://www.11ty.dev/docs/config/</a></p>
+<p><a href="https://www.11ty.dev/docs/">https://www.11ty.dev/docs/</a></p>
+
+    </div>
+    <footer class="footer bg-dark text-white text-center py-3">
+  <p>&copy; <span id="year"></span> Takirul. All rights reserved.</p>
+  <p>
+    <a href="https://twitter.com/myprofile/" class="text-white me-2">Twitter</a>
+    <a href="https://linkedin.com/myprofile/" class="text-white me-2">LinkedIn</a>
+    <a href="/terms-and-conditions/" class="text-white">Terms and Conditions</a>
+  </p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
